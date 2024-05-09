@@ -344,6 +344,10 @@ header.fullwidth .container {
     color: #fff;
 }
 
+.show-on-mobile {
+    display: none;
+}
+
 
 /* Sign In Button Media Queries */
 
@@ -426,6 +430,15 @@ header.fullwidth .container {
     .thinking-notes-form .avatar-wrapper {
         width: 100%;
         height: 90%;
+    }
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .show-on-mobile {
+        display: block !important;
+    }
+    #logo img {
+        max-width: 80px !important;
     }
 }
 
