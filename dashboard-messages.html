@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Thinking Notes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors/blue.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header-container" class="">
+            <div id="header">
+                <div class="container">
+                    <div class="left-side">
+                        <div id="logo">
+                            <a href="index.html"><img src="images/logo-t.png" alt=""></a>
+                        </div>
+                        <nav id="navigation">
+                            <ul id="responsive">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="freelancers-grid-layout.html">Send Thinking Notes</a></li>
+                            </ul>
+                        </nav>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="right-side">
+                        <div class="header-widget hide-on-mobile">
+                            <div class="header-notifications">
+                                <div class="header-notifications-trigger">
+                                    <a href="#"><i class="icon-feather-bell"></i><span>4</span></a>
+                                </div>
+                                <div class="header-notifications-dropdown">
+                                    <div class="header-notifications-headline">
+                                        <h4>Notifications</h4>
+                                        <button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
+											<i class="icon-feather-check-square"></i>
+										</button>
+                                    </div>
+                                    <div class="header-notifications-content">
+                                        <div class="header-notifications-scroll" data-simplebar>
+                                            <ul>
+                                                <li class="notifications-not-read">
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
+                                                        <span class="notification-text">
+															<strong>Michael Shannah</strong> Send you a <span class="color">Thinking Note</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-icon"><i class="icon-feather-heart"></i></span>
+                                                        <span class="notification-text">
+															<strong>Gilbert Allanis</strong> Send you a <span class="color">Love</span> Note
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-icon"><i class="icon-feather-eye"></i></span>
+                                                        <span class="notification-text">
+															<strong>Michael Shannah </strong><span class="color">reacted to</span> Your Note.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
+                                                        <span class="notification-text">
+															Your thinking note<span class="color"> successfully sent to</span><strong> Michael Shannah </strong>.
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notifications">
+                                <div class="header-notifications-trigger">
+                                    <a href="#"><i class="icon-feather-mail"></i><span>3</span></a>
+                                </div>
+                                <div class="header-notifications-dropdown">
+                                    <div class="header-notifications-headline">
+                                        <h4>Messages</h4>
+                                        <button class="mark-as-read ripple-effect-dark" title="Mark all as read" data-tippy-placement="left">
+											<i class="icon-feather-check-square"></i>
+										</button>
+                                    </div>
+                                    <div class="header-notifications-content">
+                                        <div class="header-notifications-scroll" data-simplebar>
+                                            <ul>
+                                                <li class="notifications-not-read">
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-avatar"><img src="images/user-avatar-small-03.jpg" alt=""></span>
+                                                        <div class="notification-text">
+                                                            <strong>David Peterson</strong>
+                                                            <p class="notification-msg-text">Thanks for reaching out. I'm quite busy right now on many...</p>
+                                                            <span class="color">4 hours ago</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="notifications-not-read">
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-avatar"><img src="images/user-avatar-small-02.jpg" alt=""></span>
+                                                        <div class="notification-text">
+                                                            <strong>Sindy Forest</strong>
+                                                            <p class="notification-msg-text">Hi Tom, Thank you for your note...</p>
+                                                            <span class="color">Yesterday</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="notifications-not-read">
+                                                    <a href="dashboard-messages.html">
+                                                        <span class="notification-avatar"><img src="images/user-avatar-small-02.jpg" alt=""></span>
+                                                        <div class="notification-text">
+                                                            <strong>Sindy Forest</strong>
+                                                            <p class="notification-msg-text">Hi Tom, Thank you for your note...</p>
+                                                            <span class="color">Yesterday</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-widget">
+                            <div class="header-notifications user-menu">
+                                <div class="header-notifications-trigger">
+                                    <a href="#">
+                                        <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="header-notifications-dropdown">
+                                    <div class="user-status">
+                                        <div class="user-details">
+                                            <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+                                            <div class="user-name">
+                                                Tom Smith
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="user-menu-small-nav">
+                                        <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+                                        <li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="mmenu-trigger">
+							<button class="hamburger hamburger--collapse" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+                        </span>
+                        </button>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container padding-bottom-75">
+            <div class="dashboard-content-inner">
+                <div class="dashboard-headline">
+                    <h3>Thinking Notes</h3>
+                    <nav id="breadcrumbs" class="dark">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>Thinking Notes</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="messages-container margin-top-0">
+                    <div class="messages-container-inner">
+
+                        <div class="message-content">
+                            <div class="messages-headline">
+                                <h4>Sindy Forest</h4>
+                                <a href="#" class="message-action"><i class="icon-feather-trash-2"></i> Delete Notes</a>
+                            </div>
+                            <div class="message-content-inner">
+                                <div class="message-time-sign">
+                                    <span>28 June, 2019</span>
+                                </div>
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="images/user-avatar-small-01.jpg" alt="" /></div>
+                                        <div class="message-text">
+                                            <div class="thinking-notes">
+                                                <div class="thinking-message-image">
+                                                    <img src="images/note1.jpg" alt="" />
+                                                </div>
+                                                <div class="thinking-message-image">
+                                                    <img src="images/note2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="message-bubble">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="images/user-avatar-small-02.jpg" alt="" /></div>
+                                        <div class="message-text">
+                                            <p>Thank you, Lot's of love. 👍</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="message-bubble">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="images/user-avatar-small-02.jpg" alt="" /></div>
+                                        <div class="message-text">
+                                            <div class="thinking-notes">
+                                                <div class="thinking-message-image">
+                                                    <img src="images/note3.jpg" alt="" />
+                                                </div>
+                                                <div class="thinking-message-image">
+                                                    <img src="images/note4.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="images/user-avatar-small-01.jpg" alt="" /></div>
+                                        <div class="message-text">
+                                            <p>Thanks.</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="message-reply">
+                                <div class="header-notifications">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" class="only-images"><i class="icon-material-outline-add-a-photo"></i></a>
+                                    </div>
+                                </div>
+                                <div class="header-notifications">
+                                    <div class="header-notifications-trigger">
+                                        <a href="#" class="only-files"><i class="icon-material-outline-attach-file"></i></a>
+                                    </div>
+                                </div>
+                                <textarea cols="1" rows="1" placeholder="Your Thinking Notes ..." data-autoresize></textarea>
+                                <button class="button ripple-effect">Send</button>
+                            </div>
+
+                            <div class="modal fade" id="filePreviewModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="filePreviewModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="filePreviewModalLabel">File Preview</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="thinking-message-image" id="filePreviewBody">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="button ripple-effect">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div id="footer">
+            <div class="footer-top-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-rows-container">
+                                <div class="footer-rows-left">
+                                    <div class="footer-row">
+                                        <div class="footer-row-inner footer-logo">
+                                            <img src="images/logo-t.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-rows-right">
+                                    <div class="footer-row">
+                                        <div class="footer-row-inner">
+                                            <ul class="footer-social-links">
+                                                <li>
+                                                    <a href="#" title="Facebook" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                        <i class="icon-brand-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Twitter" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                        <i class="icon-brand-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="Google Plus" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                        <i class="icon-brand-google-plus-g"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="LinkedIn" data-tippy-placement="bottom" data-tippy-theme="light">
+                                                        <i class="icon-brand-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer-row">
+                                        <div class="footer-row-inner">
+                                            <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5">
+												<option selected>English</option>
+											</select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="footer-links">
+                                <h3>Main Links</h3>
+                                <ul>
+                                    <li><a href="#"><span>Home</span></a></li>
+                                    <li><a href="#"><span>Contact</span></a></li>
+                                    <li><a href="#"><span>Profiles</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="footer-links">
+                                <h3>Helpful Links</h3>
+                                <ul>
+                                    <li><a href="#"><span>Contact</span></a></li>
+                                    <li><a href="#"><span>Privacy Policy</span></a></li>
+                                    <li><a href="#"><span>Terms of Use</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3">
+                            <div class="footer-links">
+                                <h3>Account</h3>
+                                <ul>
+                                    <li><a href="#"><span>Log In</span></a></li>
+                                    <li><a href="#"><span>My Account</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <h3><i class="icon-feather-mail"></i> Sign Up For a Newsletter</h3>
+                            <p>Weekly breaking news, analysis and cutting edge advices on letest updates.</p>
+                            <form action="#" method="get" class="newsletter">
+                                <input type="text" name="fname" placeholder="Enter your email address">
+                                <button type="submit"><i class="icon-feather-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            © 2024 <strong>Thinking Notes</strong>. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/mmenu.min.js"></script>
+    <script src="js/tippy.all.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".only-images").click(function() {
+                $("<input type='file' accept='image/*'>").change(function() {
+                    var file = this.files[0];
+                    displayFilePreview(file);
+                }).click();
+            });
+            $(".only-files").click(function() {
+                $("<input type='file'>").change(function() {
+                    var file = this.files[0];
+                    displayFilePreview(file);
+                }).click();
+            });
+
+            function displayFilePreview(file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var preview = '';
+                    if (file.type.startsWith('image')) {
+                        preview = '<img src="' + e.target.result + '" class="img-fluid">';
+                    } else {
+                        preview = '<p>' + file.name + '</p>';
+                    }
+                    $("#filePreviewBody").html(preview);
+                    $("#filePreviewModal").modal("show");
+                    $(".modal-backdrop").css("z-index", "-1");
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+
+</html>
