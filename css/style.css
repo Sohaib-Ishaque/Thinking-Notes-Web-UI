@@ -371,6 +371,51 @@ header.fullwidth .container {
         background-color: #fff;
         color: #333;
     }
+    .section-headline h3 {
+        text-align: center;
+        line-height: 40px !important;
+    }
+    .feature-text .text-white {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .feature-text .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .feature-text .g-4 .align-items-center {
+        justify-content: center;
+    }
+    .in-mind .job-listing-details {
+        flex-direction: column;
+        gap: 0 !important;
+    }
+    .job-listing .job-listing-company-logo {
+        display: block !important;
+    }
+    .in-mind .job-listing-company-logo {
+        margin-right: 30px !important;
+    }
+    .in-mind .avatar-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    .notes-world .compact-list-layout .job-listing-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .notes-world .compact-list-layout .job-listing h3 {
+        text-align: center;
+        padding-right: 0;
+    }
+    .section-headline {
+        padding-right: 0 !important;
+    }
+    .in-mind .margin-top-70 {
+        margin-top: 40px !important;
+    }
 }
 
 
@@ -2303,7 +2348,7 @@ em.mm-counter+a.mm-fullsubopen+span {
     }
     .feature-headline h3 {
         font-size: 30px !important;
-        line-height: 48px !important;
+        line-height: 48px;
     }
     .intro-banner {
         min-height: 50vh !important;
