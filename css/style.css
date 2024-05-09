@@ -443,6 +443,7 @@ header.fullwidth .container {
         max-width: 80px !important;
     }
     #webcam-video {
+        width: 400px !important;
         height: 250px !important;
     }
 }
