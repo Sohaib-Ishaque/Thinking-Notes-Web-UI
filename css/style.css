@@ -405,10 +405,19 @@ header.fullwidth .container {
         width: 100px;
         height: 100px;
     }
-    .notes-world .compact-list-layout .job-listing-details {
+    /* .notes-world .compact-list-layout .job-listing-details {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    } */
+    .notes-world .compact-list-layout .job-listing .job-listing-company-logo {
+        max-width: 40px !important;
+        margin-right: 0 !important;
+    }
+    .notes-world .compact-list-layout .job-listing {
+        padding: 30px 25px;
+        padding-right: 20px;
+        border-radius: 0;
     }
     .notes-world .compact-list-layout .job-listing h3 {
         text-align: center;
