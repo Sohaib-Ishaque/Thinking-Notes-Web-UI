@@ -442,6 +442,9 @@ header.fullwidth .container {
     #logo img {
         max-width: 80px !important;
     }
+    #webcam-video {
+        height: 100px Im !important;
+    }
 }
 
 
