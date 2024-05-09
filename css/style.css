@@ -17494,7 +17494,7 @@ ul.dashboard-box-list>li:hover {
 
 .login-avatar .avatar-wrapper {
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 
 .login-avatar .avatar-wrapper .profile-pic {
