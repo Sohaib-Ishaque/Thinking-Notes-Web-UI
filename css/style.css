@@ -2086,8 +2086,7 @@ html.mm-background .mm-page {
     background: inherit
 }
 
-
-/* #mm-blocker {
+#mm-blocker {
     background: rgba(3, 2, 1, 0);
     display: none;
     width: 100%;
@@ -2100,7 +2099,7 @@ html.mm-background .mm-page {
 
 html.mm-blocking #mm-blocker {
     display: block
-} */
+}
 
 .mm-menu.mm-offcanvas {
     z-index: 0;
