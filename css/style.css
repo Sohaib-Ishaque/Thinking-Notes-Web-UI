@@ -427,11 +427,12 @@ header.fullwidth .container {
         flex: 0 0 100%;
         width: 100%;
         max-width: 100%;
+        margin-bottom: 2rem;
     }
     #user-avatar-video,
     .thinking-notes-form .avatar-wrapper {
         width: 100%;
-        height: 200px;
+        height: 100%;
     }
     .hide-on-mobile {
         display: none !important;
