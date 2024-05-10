@@ -450,7 +450,7 @@ header.fullwidth .container {
         display: block !important;
     }
     #logo img {
-        max-width: 80px !important;
+        max-width: 60px !important;
     }
     #webcam-video {
         height: 100% !important;
@@ -2470,7 +2470,7 @@ em.mm-counter+a.mm-fullsubopen+span {
 }
 
 .footer-top-section .footer-logo img {
-    max-height: 46px;
+    max-height: 60px;
 }
 
 .footer-rows-container {
