@@ -345,7 +345,7 @@ header.fullwidth .container {
 }
 
 .show-on-mobile {
-    display: none;
+    display: none !important;
 }
 
 
