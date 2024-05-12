@@ -5,6 +5,8 @@
     <title>Thinking Notes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colors/blue.css">
 </head>
@@ -24,7 +26,7 @@
                         <nav id="navigation">
                             <ul id="responsive">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="freelancers-grid-layout.html">Send Thinking Notes</a></li>
+                                <li><a href="sendining-notes.html">Send Thinking Notes</a></li>
                             </ul>
                         </nav>
                         <div class="clearfix"></div>
@@ -46,7 +48,7 @@
                                         <div class="header-notifications-scroll" data-simplebar>
                                             <ul>
                                                 <li class="notifications-not-read">
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
                                                         <span class="notification-text">
 															<strong>Michael Shannah</strong> Send you a <span class="color">Thinking Note</span>
@@ -54,7 +56,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-icon"><i class="icon-feather-heart"></i></span>
                                                         <span class="notification-text">
 															<strong>Gilbert Allanis</strong> Send you a <span class="color">Love</span> Note
@@ -62,7 +64,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-icon"><i class="icon-feather-eye"></i></span>
                                                         <span class="notification-text">
 															<strong>Michael Shannah </strong><span class="color">reacted to</span> Your Note.
@@ -70,7 +72,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-icon"><i class="icon-material-outline-group"></i></span>
                                                         <span class="notification-text">
 															Your thinking note<span class="color"> successfully sent to</span><strong> Michael Shannah </strong>.
@@ -97,7 +99,7 @@
                                         <div class="header-notifications-scroll" data-simplebar>
                                             <ul>
                                                 <li class="notifications-not-read">
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-avatar"><img src="images/user-avatar-small-03.jpg" alt=""></span>
                                                         <div class="notification-text">
                                                             <strong>David Peterson</strong>
@@ -107,7 +109,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="notifications-not-read">
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-avatar"><img src="images/user-avatar-small-02.jpg" alt=""></span>
                                                         <div class="notification-text">
                                                             <strong>Sindy Forest</strong>
@@ -117,7 +119,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="notifications-not-read">
-                                                    <a href="dashboard-messages.html">
+                                                    <a href="messages.html">
                                                         <span class="notification-avatar"><img src="images/user-avatar-small-02.jpg" alt=""></span>
                                                         <div class="notification-text">
                                                             <strong>Sindy Forest</strong>
@@ -149,7 +151,7 @@
                                         </div>
                                     </div>
                                     <ul class="user-menu-small-nav">
-                                        <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+                                        <li><a href="settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
                                         <li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
                                     </ul>
                                 </div>
@@ -167,54 +169,81 @@
                 </div>
             </div>
         </header>
-        <div class="margin-top-90"></div>
-        <div class="container padding-bottom-70">
-            <div class="dashboard-headline">
-                <h3>Send Thinking Notes</h3>
-                <nav id="breadcrumbs" class="dark">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li>Send Thinking Notes</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="dashboard-box margin-top-0">
-                        <div class="headline">
-                            <h3><i class="icon-feather-folder-plus"></i>Thinking Note Form</h3>
-                        </div>
-                        <div class="content thinking-notes-form with-padding padding-bottom-0">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-auto">
-                                        <div class="avatar-wrapper" data-tippy-placement="bottom" title="Choose User">
-                                            <img class="profile-pic" src="images/user-avatar-placeholder.png" alt="" />
-                                            <div class="upload-button"></div>
-                                            <input class="file-upload" type="file" accept="image/*" />
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <div class="submit-field">
-                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Who's on your mind?" id="whoTosend" required></textarea>
+        <div class="clearfix"></div>
+        <div class="container padding-bottom-75">
+            <div class="dashboard-content-inner" style="min-height: auto !important;">
+                <div class="dashboard-headline">
+                    <h3>Settings</h3>
+                    <nav id="breadcrumbs" class="dark">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li>Settings</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="dashboard-box margin-top-0">
+                            <div class="headline">
+                                <h3><i class="icon-material-outline-account-circle"></i> My Account</h3>
+                            </div>
+                            <div class="content setting-form with-padding padding-bottom-0">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <a href="#small-dialog" class="popup-with-zoom-anim">
+                                                <div class="avatar-wrapper" data-tippy-placement="bottom" title="Webcam Video" id="user-avatar-video">
+                                                    <img class="profile-pic" id="profile-pic" src="images/webcam-face-capture.webp" alt="" />
                                                 </div>
-                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-xl-6">
+                                                    <div class="submit-field">
+                                                        <h5>First Name</h5>
+                                                        <input type="text" class="with-border" value="Tom">
+                                                    </div>
+                                                </div>
 
-                                            <div class="col-xl-12">
-                                                <div class="submit-field">
-                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Why..." id="whyTosend" required></textarea>
+                                                <div class="col-xl-6">
+                                                    <div class="submit-field">
+                                                        <h5>Last Name</h5>
+                                                        <input type="text" class="with-border" value="Smith">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xl-12 margin-top-30 margin-bottom-30" style="text-align: end;">
-                                                <a href="#" id="sendNote" class="button ripple-effect big"><i class="icon-feather-plus"></i> Sent Note</a>
+                                                <div class="col-xl-6">
+                                                    <div class="submit-field" data-tippy-placement="bottom" title="You can not change your email.">
+                                                        <h5>Email</h5>
+                                                        <input type="text" class="with-border" value="tom@example.com" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 margin-top-30 margin-bottom-30" style="text-align: end;">
+                                                    <a href="#" class="button ripple-effect big">Save Changes</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+            <div class="sign-in-form">
+                <ul class="popup-tabs-nav">
+                    <li><a href="#tab">Webcam Video</a></li>
+                </ul>
+                <div class="popup-tabs-container">
+                    <div class="popup-tab-content" id="tab">
+                        <div class="modal-body">
+                            <video id="video-source" width="100%" autoplay loop muted>
+                                <source src="" type="video/mp4" />
+                              </video>
+                        </div>
+                        <button id="captureAvatar" class="button button-sliding-icon ripple-effect" type="submit" form="send-pm">Capture Image <i class="icon-material-outline-arrow-right-alt"></i></button>
                     </div>
                 </div>
             </div>
@@ -332,28 +361,54 @@
     <script src="js/tippy.all.min.js"></script>
     <script src="js/simplebar.min.js"></script>
     <script src="js/bootstrap-slider.min.js"></script>
-    <script src="js/snackbar.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        $('#sendNote').click(function() {
-            var whoToSend = $('#whoTosend').val();
-            var whyToSend = $('#whyTosend').val();
+        $(document).ready(function() {
+            $("#user-avatar-video").click(function(e) {
+                e.preventDefault();
+                openWebcam();
+            });
 
-            if (whoToSend === '' || whyToSend === '') {
-                Snackbar.show({
-                    text: 'All fields are required!',
-                    pos: 'bottom-center',
-                    showAction: false,
-                    actionText: "Dismiss",
-                    duration: 3000,
-                    textColor: '#fff',
-                    backgroundColor: '#de5959'
-                });
+            function openWebcam() {
+                navigator.mediaDevices.getUserMedia({
+                        video: true
+                    })
+                    .then(function(stream) {
+                        var videoElement = document.getElementById('video-source');
+                        if ('srcObject' in videoElement) {
+                            videoElement.srcObject = stream;
+                        } else {
+                            videoElement.src = window.URL.createObjectURL(stream);
+                        }
+                        videoElement.play();
+                    })
+                    .catch(function(err) {
+                        console.error('Error accessing webcam: ', err);
+                        alert('Error accessing webcam. Please check your webcam settings and try again.');
+                    });
             }
         });
+
+        function captureImage() {
+            var videoElement = document.getElementById('video-source');
+            var canvas = document.createElement('canvas');
+            canvas.width = videoElement.videoWidth;
+            canvas.height = videoElement.videoHeight;
+            var ctx = canvas.getContext('2d');
+            ctx.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+            var dataURL = canvas.toDataURL('image/png');
+            $('#profile-pic').attr('src', dataURL);
+            videoElement.pause();
+            $.magnificPopup.close();
+        }
+        $('#captureAvatar').click(function(e) {
+            e.preventDefault();
+            captureImage();
+        });
     </script>
+
 </body>
 
 
