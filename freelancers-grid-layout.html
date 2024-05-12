@@ -198,17 +198,17 @@
                                         <div class="row">
                                             <div class="col-xl-12">
                                                 <div class="submit-field">
-                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Who's on your mind?"></textarea>
+                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Who's on your mind?" id="whoTosend" required></textarea>
                                                 </div>
                                             </div>
 
                                             <div class="col-xl-12">
                                                 <div class="submit-field">
-                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Why..."></textarea>
+                                                    <textarea cols="30" rows="3" class="with-border" placeholder="Why..." id="whyTosend" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 margin-top-30 margin-bottom-30" style="text-align: end;">
-                                                <a href="#" class="button ripple-effect big"><i class="icon-feather-plus"></i> Sent Note</a>
+                                                <a href="#" id="sendNote" class="button ripple-effect big"><i class="icon-feather-plus"></i> Sent Note</a>
                                             </div>
                                         </div>
                                     </div>
@@ -332,9 +332,28 @@
     <script src="js/tippy.all.min.js"></script>
     <script src="js/simplebar.min.js"></script>
     <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/snackbar.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $('#sendNote').click(function() {
+            var whoToSend = $('#whoTosend').val();
+            var whyToSend = $('#whyTosend').val();
+
+            if (whoToSend === '' || whyToSend === '') {
+                Snackbar.show({
+                    text: 'All fields are required!',
+                    pos: 'bottom-center',
+                    showAction: false,
+                    actionText: "Dismiss",
+                    duration: 3000,
+                    textColor: '#fff',
+                    backgroundColor: '#de5959'
+                });
+            }
+        });
+    </script>
 </body>
 
 

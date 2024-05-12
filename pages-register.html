@@ -87,7 +87,7 @@
                                     <a href="#small-dialog" class="popup-with-zoom-anim openWeb" id="openWeb"><span class="icon-feather-video"></span></a>
                                 </div>
                             </div>
-                            <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
+                            <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" id="regBtn" form="register-account-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
                         </form>
                         <p class="margin-bottom-20 margin-top-30" style="text-align: center;">Already have an account? <a href="pages-login.html">Log In!</a></p>
                     </div>
@@ -225,6 +225,7 @@
     <script src="js/tippy.all.min.js"></script>
     <script src="js/simplebar.min.js"></script>
     <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/snackbar.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
@@ -271,7 +272,27 @@
             e.preventDefault();
             captureImage();
         });
+
+
+        $('#regBtn').click(function() {
+            var fname = $('#firstname-register').val();
+            var lname = $('#lastname-register').val();
+            var email = $('#emailaddress-register').val();
+
+            if (fname === '' || lname === '' || email === '') {
+                Snackbar.show({
+                    text: 'All fields are required!',
+                    pos: 'bottom-center',
+                    showAction: false,
+                    actionText: "Dismiss",
+                    duration: 3000,
+                    textColor: '#fff',
+                    backgroundColor: '#383838'
+                });
+            }
+        });
     </script>
+
 
 
 </body>

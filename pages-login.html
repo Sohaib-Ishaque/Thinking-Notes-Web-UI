@@ -62,11 +62,10 @@
                                     </a>
                                 </div>
                             </div>
-                            <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
+                            <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" id="loginBtn" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
                         </form>
                         <p class="margin-bottom-20 margin-top-30" style="text-align: center;">Don't have an account? <a href="pages-register.html">Sign Up!</a></p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -201,6 +200,7 @@
     <script src="js/tippy.all.min.js"></script>
     <script src="js/simplebar.min.js"></script>
     <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/snackbar.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
@@ -246,6 +246,23 @@
         $('#capture-image-btn').click(function(e) {
             e.preventDefault();
             captureImage();
+        });
+
+
+        $('#loginBtn').click(function() {
+            var email = $('#emailaddress').val();
+
+            if (email === '') {
+                Snackbar.show({
+                    text: 'All fields are required!',
+                    pos: 'bottom-center',
+                    showAction: false,
+                    actionText: "Dismiss",
+                    duration: 3000,
+                    textColor: '#fff',
+                    backgroundColor: '#383838'
+                });
+            }
         });
     </script>
 
