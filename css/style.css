@@ -5232,6 +5232,14 @@ span.blog-item-tag {
     top: 0;
 }
 
+.compact-list-layout .job-listing .job-listing-company-logo.main-pro {
+    max-width: 100%;
+}
+
+.compact-list-layout .job-listing .job-listing-company-logo.main-pro .avatar-wrapper {
+    margin-bottom: 10px;
+}
+
 .compact-list-layout .job-listing .job-listing-company-logo img {
     border-radius: 50%;
 }
